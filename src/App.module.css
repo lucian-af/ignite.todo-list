@@ -1,0 +1,82 @@
+.container {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.taskList {
+  display: flex;
+  justify-content: space-between;
+
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.taskList span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.taskList span:first-of-type {
+  color: var(--orange);
+}
+
+.taskList span:first-of-type + span {
+  color: var(--red);
+}
+
+.hidden {
+  display: none;
+}
+
+.noTasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  padding: 4rem 1.5rem;
+
+  color: var(--gray-300);
+  border-top: 1px solid var(--gray-400);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.noTasks p {
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.noTasks p:first-of-type {
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.newTask {
+  margin-top: calc(0px - 1.5rem - 4px);
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .container {
+    width: 90%;
+  }
+}

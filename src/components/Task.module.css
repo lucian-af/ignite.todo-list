@@ -1,0 +1,53 @@
+.task {
+  min-height: 72px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 0.75rem;
+
+  background: var(--gray-500);
+  border-radius: 8px;
+
+  padding: 1rem;
+}
+
+.task span {
+  flex: 1;
+  font-size: 0.875rem;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: var(--gray-300);
+
+  transition: color 0.5s;
+}
+
+.deleteTask button {
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: transparent;
+  border: none;
+  color: var(--gray-300);
+  cursor: pointer;
+
+  margin-top: calc(0px - 1rem + 12px);
+}
+
+.deleteTask button:hover {
+  color: var(--danger);
+  background-color: var(--gray-400);
+  border-radius: 4px;
+}
+
+.task + .task {
+  margin-top: 0.75rem;
+}
